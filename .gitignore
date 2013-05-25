@@ -13,4 +13,7 @@ capybara-*.html
 /spec/tmp/*
 **.orig
 rerun.txt
-pickle-email-*.html
+pickle-email-*.htmlPsiApp/.project
+PsiApp/config/database.yml
+PsiApp/config/initializers/secret_token.rb
+PsiApp/.project
