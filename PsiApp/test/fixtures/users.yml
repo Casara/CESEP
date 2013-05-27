@@ -1,0 +1,259 @@
+admin:
+  role: admin
+  login: admin
+  email: admin@psi.com
+  name: Administrator
+  shift_work: integral
+  password_salt: 552e9c5f2caacc439328a60fbe6ed61dee64bd3b
+  encrypted_password: f7b3e76b557c2de387b1682079321166cdf79a6b  # $admin
+
+luria:
+  role: coordinator
+  login: luria
+  email: luria@psi.com
+  name: Alexander Luria
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145  # 123456
+
+brucke:
+  role: colleger
+  login: brucke
+  email: brucke@psi.com
+  name: Ernst Brücke
+  scholarship: true
+  matriculation: 2080891
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+  reset_password_token: 123dd305c3d381265c982dccccc005992192d638
+  reset_password_sent_at: 2013-05-26 19:24:40 UTC
+
+freud:
+  role: supervisor
+  login: freud
+  email: freud@psi.com
+  name: Sigmund Freud
+  shift_work: integral
+  active: false
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+jakobson:
+  role: receptionist
+  login: jakobson
+  email: jakobson@psi.com
+  name: Roman Jakobson
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+vygotsky:
+  role: supervisor
+  login: vygotsky
+  email: vygotsky@psi.com
+  name: Lev Vygotsky
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+leontiev:
+  role: receptionist
+  login: leontiev
+  email: leontiev@psi.com
+  name: Alexei Nikolaievich Leontiev
+  shift_work: afternoon
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+pavlov:
+  role: supervisor
+  login: pavlov
+  email: pavlov@psi.com
+  name: Ivan Petrovich Pavlov
+  shift_work: integral
+  active: false
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+sacks:
+  role: coordinator
+  login: sacks
+  email: sacks@psi.com
+  name: Oliver Sacks
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+brentano:
+  role: receptionist
+  login: brentano
+  email: brentano@psi.com
+  name: Franz Brentano
+  shift_work: afternoon
+  active: false
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+claus:
+  role: coordinator
+  login: claus
+  email: claus@psi.com
+  name: Carl Friedrich Claus
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+nathanson:
+  role: receptionist
+  login: nathanson
+  email: nathanson@psi.com
+  name: Amalie Nathanson
+  shift_work: afternoon
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+  reset_password_token: 42134e4d36668a7a5c17883a91973a716edb9055
+  reset_password_sent_at: 2013-05-27 02:04:44 UTC
+
+jones:
+  role: colleger
+  login: jones
+  email: jones@psi.com
+  name: Ernest Jones
+  scholarship: true
+  matriculation: 2080892
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+bernays:
+  role: receptionist
+  login: bernays
+  email: bernays@psi.com
+  name: Martha Bernays
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+breuer:
+  role: colleger
+  login: breuer
+  email: breuer@psi.com
+  name: Josef Breuer
+  scholarship: true
+  matriculation: 2080893
+  shift_work: afternoon
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+ebbinghaus:
+  role: supervisor
+  login: ebbinghaus
+  email: ebbinghaus@psi.com
+  name: Herrmann Ebbinghaus
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+wundt:
+  role: coordinator
+  login: wundt
+  email: wundt@psi.com
+  name: Wilhelm Wundt
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+titchener:
+  role: receptionist
+  login: titchener
+  email: titchener@psi.com
+  name: Edward Titchener
+  shift_work: morning
+  active: false
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+james:
+  role: colleger
+  login: james
+  email: james@psi.com
+  name: William James
+  scholarship: true
+  matriculation: 2080894
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+dewey:
+  role: colleger
+  login: dewey
+  email: dewey@psi.com
+  name: John Dewey
+  scholarship: true
+  matriculation: 2080895
+  shift_work: afternoon
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+  reset_password_token: 84112b9a08544ed6ba0c013649b12d43678432fa
+  reset_password_sent_at: 2013-05-27 02:06:06 UTC
+
+wertheimer:
+  role: colleger
+  login: wertheimer
+  email: wertheimer@psi.com
+  name: Max Wertheimer
+  scholarship: true
+  matriculation: 2080896
+  shift_work: afternoon
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+koffka:
+  role: coordinator
+  login: koffka
+  email: koffka@psi.com
+  name: Kurt Koffka
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+kohler:
+  role: coordinator
+  login: kohler
+  email: kohler@psi.com
+  name: Wolfgang Köhler
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+perls:
+  role: coordinator
+  login: perls
+  email: perls@psi.com
+  name: Friederich Salomon Perls
+  shift_work: integral
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+einstein:
+  role: colleger
+  login: einstein
+  email: einstein@psi.com
+  name: Albert Einstein
+  scholarship: true
+  matriculation: 2080897
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145
+
+newton:
+  role: colleger
+  login: newton
+  email: newton@psi.com
+  name: Isaac Newton
+  scholarship: true
+  matriculation: 2080898
+  shift_work: morning
+  password_salt: 20df54ab24e9c48903a7c42bca0f97ca6cbf688a
+  encrypted_password: aff1e2a441a301dfe4ce12243f1998b895ad8145

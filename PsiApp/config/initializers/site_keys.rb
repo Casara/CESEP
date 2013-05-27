@@ -1,0 +1,1 @@
+REST_AUTH_KEY = 'da502e425b6fdfa9898e220a99a8dcb98170c3ee'
