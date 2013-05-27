@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel>
+<schema name="public" protected="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<database name="novo_banco_de_dados">
+</database>
+
+<table name="users" oids="true">
+	<schema name="public"/>
+	<position x="21" y="21"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="address">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="number">
+		<type name="integer"/>
+	</column>
+	<column name="complement">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="district">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="postal_code">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="city">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="landline">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="phone">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="scholarship" not-null="true" default-value="FALSE">
+		<type name="boolean"/>
+	</column>
+	<column name="matriculation">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="shift_work" not-null="true">
+		<type name="varchar" length="255"/>
+		<comment><![CDATA[integral, morning, afternoon]]></comment>
+	</column>
+	<column name="notes">
+		<type name="text"/>
+	</column>
+	<column name="active" not-null="true" default-value="TRUE">
+		<type name="boolean"/>
+	</column>
+	<column name="email" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="login" not-null="true">
+		<type name="varchar" length="30"/>
+	</column>
+	<column name="role" not-null="true">
+		<type name="varchar" length="255"/>
+		<comment><![CDATA[admin, coordinator, receptionist, supervisor, colleger]]></comment>
+	</column>
+	<column name="encrypted_password" not-null="true">
+		<type name="varchar" length="40"/>
+	</column>
+	<column name="password_salt" not-null="true">
+		<type name="varchar" length="40"/>
+	</column>
+	<column name="reset_password_token">
+		<type name="varchar" length="40"/>
+	</column>
+	<column name="reset_password_sent_at">
+		<type name="timestamp"/>
+	</column>
+	<column name="last_sign_in_at">
+		<type name="timestamp"/>
+	</column>
+	<column name="last_sign_in_ip">
+		<type name="inet"/>
+	</column>
+	<column name="browser">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="platform">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="created_at">
+		<type name="timestamp"/>
+	</column>
+	<column name="updated_at">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="users_pkey" type="pk-constr" factor="10" table="public.users">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<index name="id_users_name" table="public.users"
+		 concurrent="false" unique="false" fast-update="false"
+		 index-type="btree" factor="0">
+		<idxelement use-sorting="true" nulls-first="false" asc-order="true">
+			<column name="name"/>
+		</idxelement>
+	</index>
+	<index name="ui_users_matriculation" table="public.users"
+		 concurrent="false" unique="true" fast-update="false"
+		 index-type="btree" factor="0">
+		<idxelement use-sorting="true" nulls-first="false" asc-order="true">
+			<column name="matriculation"/>
+		</idxelement>
+	</index>
+	<index name="ui_users_email" table="public.users"
+		 concurrent="false" unique="true" fast-update="false"
+		 index-type="btree" factor="0">
+		<idxelement use-sorting="true" nulls-first="false" asc-order="true">
+			<column name="email"/>
+		</idxelement>
+	</index>
+	<index name="ui_users_login" table="public.users"
+		 concurrent="false" unique="true" fast-update="false"
+		 index-type="btree" factor="0">
+		<idxelement use-sorting="true" nulls-first="false" asc-order="true">
+			<column name="login"/>
+		</idxelement>
+	</index>
+	<index name="ui_users_reset_password_token" table="public.users"
+		 concurrent="false" unique="true" fast-update="false"
+		 index-type="btree" factor="0">
+		<idxelement use-sorting="true" nulls-first="false" asc-order="true">
+			<column name="reset_password_token"/>
+		</idxelement>
+	</index>
+</table>
+
+</dbmodel>
