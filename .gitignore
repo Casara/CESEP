@@ -17,3 +17,6 @@ pickle-email-*.htmlPsiApp/.project
 PsiApp/config/database.yml
 PsiApp/config/initializers/secret_token.rb
 PsiApp/.project
+PsiApp/config/initializers/site_keys.rb
+PsiApp/db/structure.sql
+PsiApp/Gemfile.lock
