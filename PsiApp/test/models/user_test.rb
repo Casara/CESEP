@@ -71,6 +71,6 @@ class UserTest < ActiveSupport::TestCase
 
     @luria.update(reset_password_token: '123dd305c3d381265c982dccccc005992192d638',
                   reset_password_sent_at: Time.now.utc)
-    assert user.errors[:reset_password_token].any?
+    assert @luria.errors[:reset_password_token].any?
   end
 end
