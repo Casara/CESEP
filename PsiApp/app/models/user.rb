@@ -5,9 +5,11 @@ class User < ActiveRecord::Base
 
   NAME_MIN_LENGTH = 2
   LOGIN_WITHIN_LENGTH = 3..30
+
   NAME_REGEX = /\A[^[:cntrl:]\\<>\/&]*\z/
   EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
   LOGIN_REGEX = /\A[a-z0-9_\-@\.]*\z/i
+
   SHIFT_WORKS = %w[integral morning afternoon]
   ROLES = %w[admin coordinator receptionist supervisor colleger]
 
@@ -29,13 +31,13 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :login, case_sensitive: false
   validates_uniqueness_of :reset_password_token
 
-  def password=(value)
-    @password = value
-    if value.blank?
+  def password=(arg)
+    @password = arg
+    if arg.blank?
       self.encrypted_password = self.password_salt = nil
     else
       self.password_salt ||= Psi::Authentication::Token.make
-      self.encrypted_password = Psi::Authentication::PasswordManager.password_digest(value, password_salt)
+      self.encrypted_password = Psi::Authentication::PasswordManager.password_digest(arg, password_salt)
     end
   end
 
