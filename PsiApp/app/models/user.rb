@@ -41,14 +41,19 @@ class User < ActiveRecord::Base
     end
   end
 
-  def random_password!
+  def random_password
     self.password = self.password_confirmation = Psi::Authentication::PasswordManager.random_password
+  end
+
+  def random_password!
+    random_password
+    save
   end
 
   private
 
   def check_password_for_new_record
-    random_password! if new_record? && password.blank?
+    random_password if new_record? && password.blank?
     true
   end
 end
