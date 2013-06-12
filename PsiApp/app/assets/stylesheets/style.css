@@ -1,0 +1,9 @@
+body {
+  font-size: 12px;
+}
+
+form .required label.control-label:before {
+  color: #EE3322;
+  content: "* ";
+  display: inline;
+}

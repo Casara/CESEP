@@ -1,0 +1,149 @@
+<!--
+<h1>New user</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', users_path %>
+-->
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <form class="form-horizontal" name="form_user" method="post" action="<%= users_path %>" accept-charset="UTF-8">
+        <legend>Novo usuário</legend>
+
+        <div class="control-group required">
+          <label for="user_role" class="control-label">Papel</label>
+          <div class="controls">
+            <select id="user_role" name="role" tabindex="1" autofocus>
+              <option value="" selected="selected"></option>
+              <option value="admin">Administrador(a)</option>
+              <option value="coordinator">Coordenador(a)</option>
+              <option value="receptionist">Recepcionista</option>
+              <option value="supervisor">Supervisor(a)</option>
+              <option value="colleger">Bolsista</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group required">
+          <label for="user_login" class="control-label">Nome de usuário</label>
+          <div class="controls">
+            <input id="user_login" type="text" name="login" class="input-xlarge" tabindex="2">
+          </div>
+        </div>
+
+        <div class="control-group required">
+          <label for="user_email" class="control-label">E-mail</label>
+          <div class="controls">
+            <input id="user_email" type="text" name="email" class="input-xlarge" tabindex="3">
+          </div>
+        </div>
+
+        <div class="control-group required">
+          <label for="user_name" class="control-label">Nome completo</label>
+          <div class="controls">
+            <input id="user_name" type="text" name="name" class="input-xlarge" tabindex="4">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_address" class="control-label">Endereço</label>
+          <div class="controls">
+            <input id="user_address" type="text" name="address" class="input-xlarge" tabindex="5">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_number" class="control-label">Número</label>
+          <div class="controls">
+            <input id="user_number" type="text" name="number" class="input-small" tabindex="6">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_complement" class="control-label">Complemento</label>
+          <div class="controls">
+            <input id="user_complement" type="text" name="complement" class="input-xlarge" tabindex="7">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_postal_code" class="control-label">CEP</label>
+          <div class="controls">
+            <input id="user_postal_code" type="text" name="postal_code" class="input-small" tabindex="8">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_district" class="control-label">Bairro</label>
+          <div class="controls">
+            <input id="user_district" type="text" name="district" class="input-xlarge" tabindex="9">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_city" class="control-label">Cidade</label>
+          <div class="controls">
+            <input id="user_city" type="text" name="city" class="input-xlarge" tabindex="10">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_landline" class="control-label">Telefone residencial</label>
+          <div class="controls">
+            <input id="user_landline" type="text" name="landline" class="input-xlarge" tabindex="11">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_phone" class="control-label">Telefone celular</label>
+          <div class="controls">
+            <input id="user_phone" type="text" name="phone" class="input-xlarge" tabindex="12">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <label class="checkbox">
+              <input id="user_scholarship" type="checkbox" name="scholarship" tabindex="13" value="1">
+              Bolsista?
+            </label>
+          </div>
+        </div>
+
+        <div class="control-group required">
+          <label for="user_matriculation" class="control-label">Matrícula</label>
+          <div class="controls">
+            <input id="user_matriculation" type="text" name="matriculation" class="input-xlarge" tabindex="14">
+            <span class="help-block">Obrigatório quando bolsista.</span>
+          </div>
+        </div>
+
+        <div class="control-group required">
+          <label for="user_shift_work" class="control-label">Turno de trabalho</label>
+          <div class="controls">
+            <select id="user_shift_work" name="shift_work" tabindex="15">
+              <option value="" selected="selected"></option>
+              <option value="integral">Integral</option>
+              <option value="morning">Manhã</option>
+              <option value="afternoon">Tarde</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="user_notes" class="control-label">Anotações</label>
+          <div class="controls">
+            <textarea id="user_notes" name="notes" class="input-xlarge" tabindex="16"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary pull-right" name="commit">Salvar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
